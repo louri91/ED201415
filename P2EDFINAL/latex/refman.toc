@@ -1,0 +1,32 @@
+\contentsline {chapter}{\numberline {1}Class Index}{1}
+\contentsline {section}{\numberline {1.1}Class List}{1}
+\contentsline {chapter}{\numberline {2}Class Documentation}{3}
+\contentsline {section}{\numberline {2.1}def\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M Class Reference}{3}
+\contentsline {subsection}{\numberline {2.1.1}Constructor \& Destructor Documentation}{4}
+\contentsline {subsubsection}{\numberline {2.1.1.1}def\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M}{4}
+\contentsline {subsubsection}{\numberline {2.1.1.2}def\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}M}{4}
+\contentsline {subsection}{\numberline {2.1.2}Member Function Documentation}{4}
+\contentsline {subsubsection}{\numberline {2.1.2.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Codes}{4}
+\contentsline {subsubsection}{\numberline {2.1.2.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Fall}{4}
+\contentsline {subsubsection}{\numberline {2.1.2.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Lat}{4}
+\contentsline {subsubsection}{\numberline {2.1.2.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Long}{4}
+\contentsline {subsubsection}{\numberline {2.1.2.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mas}{4}
+\contentsline {subsubsection}{\numberline {2.1.2.6}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Year}{5}
+\contentsline {subsubsection}{\numberline {2.1.2.7}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Code}{5}
+\contentsline {subsubsection}{\numberline {2.1.2.8}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Fall}{5}
+\contentsline {subsubsection}{\numberline {2.1.2.9}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Lat}{5}
+\contentsline {subsubsection}{\numberline {2.1.2.10}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Long}{5}
+\contentsline {subsubsection}{\numberline {2.1.2.11}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mas}{5}
+\contentsline {subsubsection}{\numberline {2.1.2.12}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Year}{5}
+\contentsline {section}{\numberline {2.2}diccionario Class Reference}{6}
+\contentsline {subsection}{\numberline {2.2.1}Constructor \& Destructor Documentation}{6}
+\contentsline {subsubsection}{\numberline {2.2.1.1}diccionario}{6}
+\contentsline {subsubsection}{\numberline {2.2.1.2}diccionario}{7}
+\contentsline {subsection}{\numberline {2.2.2}Member Function Documentation}{7}
+\contentsline {subsubsection}{\numberline {2.2.2.1}empty}{7}
+\contentsline {subsubsection}{\numberline {2.2.2.2}find}{7}
+\contentsline {subsubsection}{\numberline {2.2.2.3}insert}{8}
+\contentsline {subsubsection}{\numberline {2.2.2.4}operator=}{8}
+\contentsline {subsubsection}{\numberline {2.2.2.5}operator[]}{8}
+\contentsline {subsubsection}{\numberline {2.2.2.6}operator[]}{9}
+\contentsline {subsubsection}{\numberline {2.2.2.7}size}{9}

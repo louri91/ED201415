@@ -1,0 +1,229 @@
+\section{tree$<$ T $>$\+:\+:node Class Reference}
+\label{classtree_1_1node}\index{tree$<$ T $>$\+::node@{tree$<$ T $>$\+::node}}
+
+
+{\ttfamily \#include $<$tree.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf node} ()
+\begin{DoxyCompactList}\small\item\em Constructor primitivo. \end{DoxyCompactList}\item 
+{\bf node} (const {\bf node} \&n)
+\begin{DoxyCompactList}\small\item\em Constructor copia. \end{DoxyCompactList}\item 
+void {\bf setlabel} (const T \&e)
+\begin{DoxyCompactList}\small\item\em Modifica la etiqueta. \end{DoxyCompactList}\item 
+bool {\bf null} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve si el nodo es nulo. \end{DoxyCompactList}\item 
+{\bf node} {\bf parent} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el padre del nodo receptor. \end{DoxyCompactList}\item 
+{\bf node} {\bf left} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el hizo izquierdo del nodo receptor. \end{DoxyCompactList}\item 
+{\bf node} {\bf next\+\_\+sibling} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el hermano derecho del nodo receptor. \end{DoxyCompactList}\item 
+T \& {\bf operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la etiqueta del nodo. \end{DoxyCompactList}\item 
+const T \& {\bf operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la etiqueta del nodo. \end{DoxyCompactList}\item 
+{\bf node} \& {\bf operator=} (const {\bf node} \&n)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+bool {\bf operator==} (const {\bf node} \&n) const 
+\begin{DoxyCompactList}\small\item\em Operador de comparación de igualdad. \end{DoxyCompactList}\item 
+bool {\bf operator!=} (const {\bf node} \&n) const 
+\begin{DoxyCompactList}\small\item\em Operador de comparación de desigualdad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf tree$<$ T $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class tree$<$ T $>$\+::node}
+
+Descripción
+
+Representa a los nodos del árbol
+
+Descripción
+
+Representa a los nodos del árbol, se usa con arboles constantes 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tree\+::node@{tree\+::node}!node@{node}}
+\index{node@{node}!tree\+::node@{tree\+::node}}
+\subsubsection[{node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::node\+::node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_a7aa43e5241dfff68de4e5b18ed9ef0e2}
+
+
+Constructor primitivo. 
+
+\index{tree\+::node@{tree\+::node}!node@{node}}
+\index{node@{node}!tree\+::node@{tree\+::node}}
+\subsubsection[{node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tree}$<$ T $>$\+::node\+::node (
+\begin{DoxyParamCaption}
+\item[{const {\bf node} \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_abfd6d34a7f15c637d3f7eefb6614de34}
+
+
+Constructor copia. 
+
+
+
+\subsection{Member Function Documentation}
+\index{tree\+::node@{tree\+::node}!left@{left}}
+\index{left@{left}!tree\+::node@{tree\+::node}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf node} {\bf tree}$<$ T $>$\+::node\+::left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_a7a51fd85d7d0c0bd713ae87c5d9c121b}
+
+
+Devuelve el hizo izquierdo del nodo receptor. 
+
+\begin{DoxyPrecond}{Precondition}
+El nodo receptor no puede ser nulo 
+\end{DoxyPrecond}
+\index{tree\+::node@{tree\+::node}!next\+\_\+sibling@{next\+\_\+sibling}}
+\index{next\+\_\+sibling@{next\+\_\+sibling}!tree\+::node@{tree\+::node}}
+\subsubsection[{next\+\_\+sibling}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf node} {\bf tree}$<$ T $>$\+::node\+::next\+\_\+sibling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_a76dbd679ebb392317f7725b9235507ac}
+
+
+Devuelve el hermano derecho del nodo receptor. 
+
+\begin{DoxyPrecond}{Precondition}
+El nodo receptor no puede ser nulo 
+\end{DoxyPrecond}
+\index{tree\+::node@{tree\+::node}!null@{null}}
+\index{null@{null}!tree\+::node@{tree\+::node}}
+\subsubsection[{null}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf tree}$<$ T $>$\+::node\+::null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_afdd9172e748df774fe25b7cb4c5cc435}
+
+
+Devuelve si el nodo es nulo. 
+
+\index{tree\+::node@{tree\+::node}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tree\+::node@{tree\+::node}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf tree}$<$ T $>$\+::node\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf node} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_af6ff324453c7dd34144d7e4ccafe13db}
+
+
+Operador de comparación de desigualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & el nodo con el que se compara \\
+\hline
+\end{DoxyParams}
+\index{tree\+::node@{tree\+::node}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!tree\+::node@{tree\+::node}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T \& {\bf tree}$<$ T $>$\+::node\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_a5662a7386b8d91e4ad4cdc9cba3cd06c}
+
+
+Devuelve la etiqueta del nodo. 
+
+\begin{DoxyPrecond}{Precondition}
+Si se usa como consultor, !n.Nulo() 
+\end{DoxyPrecond}
+\index{tree\+::node@{tree\+::node}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!tree\+::node@{tree\+::node}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T \& {\bf tree}$<$ T $>$\+::node\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_a2fc249634e82c5715319962ab86f9b61}
+
+
+Devuelve la etiqueta del nodo. 
+
+\begin{DoxyPrecond}{Precondition}
+El nodo receptor no puede ser nulo 
+\end{DoxyPrecond}
+\index{tree\+::node@{tree\+::node}!operator=@{operator=}}
+\index{operator=@{operator=}!tree\+::node@{tree\+::node}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tree}$<$ T $>$\+::{\bf node} \& {\bf tree}$<$ T $>$\+::node\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf node} \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_afcd6fe90e268459afedf0da7de7b66a9}
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & el nodo a asignar \\
+\hline
+\end{DoxyParams}
+\index{tree\+::node@{tree\+::node}!operator==@{operator==}}
+\index{operator==@{operator==}!tree\+::node@{tree\+::node}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf tree}$<$ T $>$\+::node\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf node} \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_aacf02bdad313bb0556cc90be4e1589cb}
+
+
+Operador de comparación de igualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & el nodo con el que se compara \\
+\hline
+\end{DoxyParams}
+\index{tree\+::node@{tree\+::node}!parent@{parent}}
+\index{parent@{parent}!tree\+::node@{tree\+::node}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf node} {\bf tree}$<$ T $>$\+::node\+::parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_a5a1a31f7b28c8a96cfc8f356ad363d75}
+
+
+Devuelve el padre del nodo receptor. 
+
+\begin{DoxyPrecond}{Precondition}
+El nodo receptor no puede ser nulo 
+\end{DoxyPrecond}
+\index{tree\+::node@{tree\+::node}!setlabel@{setlabel}}
+\index{setlabel@{setlabel}!tree\+::node@{tree\+::node}}
+\subsubsection[{setlabel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf tree}$<$ T $>$\+::node\+::setlabel (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_1_1node_a0d4fbdc54eeba62d09ac63fa87838573}
+
+
+Modifica la etiqueta. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tree\+::node@{tree\+::node}!tree$<$ T $>$@{tree$<$ T $>$}}
+\index{tree$<$ T $>$@{tree$<$ T $>$}!tree\+::node@{tree\+::node}}
+\subsubsection[{tree$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class {\bf tree}$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}\label{classtree_1_1node_a580e66a56b1685f2fc7e95ded824a4b6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+{\bf tree.\+h}\item 
+{\bf nodetree.\+hxx}\end{DoxyCompactItemize}

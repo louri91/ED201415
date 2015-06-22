@@ -1,0 +1,75 @@
+\input{preambuloSimple.tex}
+
+%----------------------------------------------------------------------------------------
+%	TÃTULO Y DATOS DEL ALUMNO
+%----------------------------------------------------------------------------------------
+
+\title{	
+\normalfont \normalsize 
+\textsc{{\bf Estructuras de Datos (2014-2015)} \\ Grado en Ingeniería Informática \\ Universidad de Granada} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Memoria Práctica 2 \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\usepackage[spanish]{babel}
+\author{Amanda Fernández Piedra} % Nombre y apellidos
+\usepackage[utf8]{inputenc}
+\date{\normalsize\today} % Incluye la fecha actual
+
+%----------------------------------------------------------------------------------------
+% DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Muestra el TÃ­tulo
+
+\newpage %inserta un salto de pÃ¡gina
+
+\tableofcontents % para generar el Ã­ndice de contenidos
+
+\listoffigures
+
+%\listoftables
+
+\newpage
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	CuestiÂŽon 1
+%----------------------------------------------------------------------------------------
+
+\section{Análisis de la eficiencia de los algoritmos implementados en la práctica}
+En esta práctica hemos podido aprender lo importante que es la eficiencia de los 
+algoritmos a la hora de ejecutar nuestros programas. 
+Por un lado, tenemos la primera representación diccionarioV1.hxx la cual realiza 
+una inserción desordenada de meteoritos en un diccionario y posteriormente se 
+realiza una búsqueda secuencial en el mismo diccionario.
+Por otro lado, tenemos la segunda representación diccionarioV2.hxx la cual 
+después de realizar la inserción desordenada de meteoritos, los ordena mediante 
+el algoritmo de ordenación por burbuja. Posteriormente, se realiza una búsqueda 
+de los meteoritos mediante el algoritmo de búsqueda binaria.
+
+\begin{itemize}
+  \item diccionarioV1
+  \begin{itemize}
+    \item Inserción: $45,637$ segundos
+    \item Búsqueda en el peor caso de que no encuentre el meteorito en el 
+    diccionario: $10$ milisegundos
+  \end{itemize}
+
+    \item diccionarioV2
+    \begin{itemize}
+    \item Inserción: $45,637$ segundos
+    \item Ordenación: $87,520$ segundos
+    \item Búsqueda en el peor caso de que no encuentre el meteorito en el 
+    diccionario: $0,0010$ milisegundos
+  \end{itemize}
+  \end{itemize}
+
+\section{Conclusiones}
+
+
+
+\end{document}

@@ -1,0 +1,210 @@
+\contentsline {chapter}{\numberline {1}Todo List}{1}{chapter.2}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.3}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.4}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.5}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.6}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.7}
+\contentsline {section}{\numberline {4.1}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}inorderiterator Class Reference}{7}{section.8}
+\contentsline {subsection}{\numberline {4.1.1}Constructor \& Destructor Documentation}{7}{subsection.10}
+\contentsline {subsubsection}{\numberline {4.1.1.1}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}inorderiterator}{7}{subsubsection.11}
+\contentsline {subsubsection}{\numberline {4.1.1.2}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}inorderiterator}{7}{subsubsection.12}
+\contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{7}{subsection.13}
+\contentsline {subsubsection}{\numberline {4.1.2.1}operator"!=}{7}{subsubsection.14}
+\contentsline {subsubsection}{\numberline {4.1.2.2}operator$\ast $}{7}{subsubsection.15}
+\contentsline {subsubsection}{\numberline {4.1.2.3}operator++}{7}{subsubsection.16}
+\contentsline {subsubsection}{\numberline {4.1.2.4}operator==}{7}{subsubsection.17}
+\contentsline {section}{\numberline {4.2}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}iterator Class Reference}{8}{section.18}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.21}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{8}{subsection.22}
+\contentsline {subsubsection}{\numberline {4.2.2.1}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}iterator}{8}{subsubsection.23}
+\contentsline {subsubsection}{\numberline {4.2.2.2}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}iterator}{8}{subsubsection.24}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{9}{subsection.25}
+\contentsline {subsubsection}{\numberline {4.2.3.1}operator"!=}{9}{subsubsection.26}
+\contentsline {subsubsection}{\numberline {4.2.3.2}operator$\ast $}{9}{subsubsection.27}
+\contentsline {subsubsection}{\numberline {4.2.3.3}operator++}{9}{subsubsection.28}
+\contentsline {subsubsection}{\numberline {4.2.3.4}operator++}{9}{subsubsection.29}
+\contentsline {subsubsection}{\numberline {4.2.3.5}operator=}{9}{subsubsection.30}
+\contentsline {subsubsection}{\numberline {4.2.3.6}operator==}{9}{subsubsection.31}
+\contentsline {subsubsection}{\numberline {4.2.3.7}upper\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A}{9}{subsubsection.32}
+\contentsline {subsection}{\numberline {4.2.4}Friends And Related Function Documentation}{9}{subsection.33}
+\contentsline {subsubsection}{\numberline {4.2.4.1}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set}{9}{subsubsection.34}
+\contentsline {section}{\numberline {4.3}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}leveliterator Class Reference}{9}{section.35}
+\contentsline {subsection}{\numberline {4.3.1}Constructor \& Destructor Documentation}{10}{subsection.37}
+\contentsline {subsubsection}{\numberline {4.3.1.1}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}leveliterator}{10}{subsubsection.38}
+\contentsline {subsubsection}{\numberline {4.3.1.2}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}leveliterator}{10}{subsubsection.39}
+\contentsline {subsection}{\numberline {4.3.2}Member Function Documentation}{10}{subsection.40}
+\contentsline {subsubsection}{\numberline {4.3.2.1}operator"!=}{10}{subsubsection.41}
+\contentsline {subsubsection}{\numberline {4.3.2.2}operator$\ast $}{10}{subsubsection.42}
+\contentsline {subsubsection}{\numberline {4.3.2.3}operator++}{10}{subsubsection.43}
+\contentsline {subsubsection}{\numberline {4.3.2.4}operator==}{10}{subsubsection.44}
+\contentsline {section}{\numberline {4.4}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}node Class Reference}{10}{section.45}
+\contentsline {subsection}{\numberline {4.4.1}Constructor \& Destructor Documentation}{11}{subsection.48}
+\contentsline {subsubsection}{\numberline {4.4.1.1}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}node}{11}{subsubsection.49}
+\contentsline {subsubsection}{\numberline {4.4.1.2}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}node}{11}{subsubsection.50}
+\contentsline {subsubsection}{\numberline {4.4.1.3}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}node}{11}{subsubsection.51}
+\contentsline {subsection}{\numberline {4.4.2}Member Function Documentation}{11}{subsection.52}
+\contentsline {subsubsection}{\numberline {4.4.2.1}left}{11}{subsubsection.53}
+\contentsline {subsubsection}{\numberline {4.4.2.2}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sibling}{11}{subsubsection.54}
+\contentsline {subsubsection}{\numberline {4.4.2.3}null}{11}{subsubsection.55}
+\contentsline {subsubsection}{\numberline {4.4.2.4}operator"!=}{11}{subsubsection.56}
+\contentsline {subsubsection}{\numberline {4.4.2.5}operator$\ast $}{12}{subsubsection.57}
+\contentsline {subsubsection}{\numberline {4.4.2.6}operator=}{12}{subsubsection.58}
+\contentsline {subsubsection}{\numberline {4.4.2.7}operator==}{12}{subsubsection.59}
+\contentsline {subsubsection}{\numberline {4.4.2.8}parent}{12}{subsubsection.60}
+\contentsline {subsection}{\numberline {4.4.3}Friends And Related Function Documentation}{12}{subsection.61}
+\contentsline {subsubsection}{\numberline {4.4.3.1}tree$<$ T $>$}{12}{subsubsection.62}
+\contentsline {section}{\numberline {4.5}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}postorderiterator Class Reference}{12}{section.63}
+\contentsline {subsection}{\numberline {4.5.1}Constructor \& Destructor Documentation}{13}{subsection.65}
+\contentsline {subsubsection}{\numberline {4.5.1.1}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}postorderiterator}{13}{subsubsection.66}
+\contentsline {subsubsection}{\numberline {4.5.1.2}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}postorderiterator}{13}{subsubsection.67}
+\contentsline {subsection}{\numberline {4.5.2}Member Function Documentation}{13}{subsection.68}
+\contentsline {subsubsection}{\numberline {4.5.2.1}operator"!=}{13}{subsubsection.69}
+\contentsline {subsubsection}{\numberline {4.5.2.2}operator$\ast $}{13}{subsubsection.70}
+\contentsline {subsubsection}{\numberline {4.5.2.3}operator++}{13}{subsubsection.71}
+\contentsline {subsubsection}{\numberline {4.5.2.4}operator==}{13}{subsubsection.72}
+\contentsline {section}{\numberline {4.6}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}preorderiterator Class Reference}{13}{section.73}
+\contentsline {subsection}{\numberline {4.6.1}Constructor \& Destructor Documentation}{13}{subsection.75}
+\contentsline {subsubsection}{\numberline {4.6.1.1}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}preorderiterator}{13}{subsubsection.76}
+\contentsline {subsubsection}{\numberline {4.6.1.2}const\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}preorderiterator}{13}{subsubsection.77}
+\contentsline {subsection}{\numberline {4.6.2}Member Function Documentation}{13}{subsection.78}
+\contentsline {subsubsection}{\numberline {4.6.2.1}operator"!=}{13}{subsubsection.79}
+\contentsline {subsubsection}{\numberline {4.6.2.2}operator$\ast $}{13}{subsubsection.80}
+\contentsline {subsubsection}{\numberline {4.6.2.3}operator++}{13}{subsubsection.81}
+\contentsline {subsubsection}{\numberline {4.6.2.4}operator==}{14}{subsubsection.82}
+\contentsline {section}{\numberline {4.7}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set Class Reference}{14}{section.83}
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{15}{subsection.87}
+\contentsline {subsection}{\numberline {4.7.2}Member Typedef Documentation}{16}{subsection.88}
+\contentsline {subsubsection}{\numberline {4.7.2.1}size\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}type}{16}{subsubsection.89}
+\contentsline {subsection}{\numberline {4.7.3}Constructor \& Destructor Documentation}{16}{subsection.90}
+\contentsline {subsubsection}{\numberline {4.7.3.1}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set}{16}{subsubsection.91}
+\contentsline {subsubsection}{\numberline {4.7.3.2}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set}{16}{subsubsection.92}
+\contentsline {subsection}{\numberline {4.7.4}Member Function Documentation}{16}{subsection.93}
+\contentsline {subsubsection}{\numberline {4.7.4.1}begin}{16}{subsubsection.94}
+\contentsline {subsubsection}{\numberline {4.7.4.2}codes\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}With\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Prefix}{16}{subsubsection.95}
+\contentsline {subsubsection}{\numberline {4.7.4.3}empty}{16}{subsubsection.96}
+\contentsline {subsubsection}{\numberline {4.7.4.4}end}{16}{subsubsection.97}
+\contentsline {subsubsection}{\numberline {4.7.4.5}erase}{16}{subsubsection.98}
+\contentsline {subsubsection}{\numberline {4.7.4.6}find}{17}{subsubsection.99}
+\contentsline {subsubsection}{\numberline {4.7.4.7}insert}{17}{subsubsection.100}
+\contentsline {subsubsection}{\numberline {4.7.4.8}operator=}{17}{subsubsection.101}
+\contentsline {subsubsection}{\numberline {4.7.4.9}print}{18}{subsubsection.102}
+\contentsline {subsubsection}{\numberline {4.7.4.10}reading\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set}{18}{subsubsection.103}
+\contentsline {subsubsection}{\numberline {4.7.4.11}size}{18}{subsubsection.104}
+\contentsline {section}{\numberline {4.8}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:inorderiterator Class Reference}{18}{section.105}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{18}{subsection.107}
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{19}{subsection.109}
+\contentsline {subsubsection}{\numberline {4.8.2.1}inorderiterator}{19}{subsubsection.110}
+\contentsline {subsubsection}{\numberline {4.8.2.2}inorderiterator}{19}{subsubsection.111}
+\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{19}{subsection.112}
+\contentsline {subsubsection}{\numberline {4.8.3.1}operator"!=}{19}{subsubsection.113}
+\contentsline {subsubsection}{\numberline {4.8.3.2}operator$\ast $}{19}{subsubsection.114}
+\contentsline {subsubsection}{\numberline {4.8.3.3}operator++}{19}{subsubsection.115}
+\contentsline {subsubsection}{\numberline {4.8.3.4}operator==}{19}{subsubsection.116}
+\contentsline {section}{\numberline {4.9}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:leveliterator Class Reference}{19}{section.117}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{19}{subsection.119}
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{19}{subsection.121}
+\contentsline {subsubsection}{\numberline {4.9.2.1}leveliterator}{19}{subsubsection.122}
+\contentsline {subsubsection}{\numberline {4.9.2.2}leveliterator}{19}{subsubsection.123}
+\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{19}{subsection.124}
+\contentsline {subsubsection}{\numberline {4.9.3.1}operator"!=}{19}{subsubsection.125}
+\contentsline {subsubsection}{\numberline {4.9.3.2}operator$\ast $}{20}{subsubsection.126}
+\contentsline {subsubsection}{\numberline {4.9.3.3}operator++}{20}{subsubsection.127}
+\contentsline {subsubsection}{\numberline {4.9.3.4}operator==}{20}{subsubsection.128}
+\contentsline {section}{\numberline {4.10}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:node Class Reference}{20}{section.129}
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{21}{subsection.132}
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{21}{subsection.134}
+\contentsline {subsubsection}{\numberline {4.10.2.1}node}{21}{subsubsection.135}
+\contentsline {subsubsection}{\numberline {4.10.2.2}node}{21}{subsubsection.136}
+\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{21}{subsection.137}
+\contentsline {subsubsection}{\numberline {4.10.3.1}left}{21}{subsubsection.138}
+\contentsline {subsubsection}{\numberline {4.10.3.2}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sibling}{21}{subsubsection.139}
+\contentsline {subsubsection}{\numberline {4.10.3.3}null}{21}{subsubsection.140}
+\contentsline {subsubsection}{\numberline {4.10.3.4}operator"!=}{21}{subsubsection.141}
+\contentsline {subsubsection}{\numberline {4.10.3.5}operator$\ast $}{22}{subsubsection.142}
+\contentsline {subsubsection}{\numberline {4.10.3.6}operator$\ast $}{22}{subsubsection.143}
+\contentsline {subsubsection}{\numberline {4.10.3.7}operator=}{22}{subsubsection.144}
+\contentsline {subsubsection}{\numberline {4.10.3.8}operator==}{22}{subsubsection.145}
+\contentsline {subsubsection}{\numberline {4.10.3.9}parent}{22}{subsubsection.146}
+\contentsline {subsubsection}{\numberline {4.10.3.10}setlabel}{22}{subsubsection.147}
+\contentsline {subsection}{\numberline {4.10.4}Friends And Related Function Documentation}{22}{subsection.148}
+\contentsline {subsubsection}{\numberline {4.10.4.1}tree$<$ T $>$}{22}{subsubsection.149}
+\contentsline {section}{\numberline {4.11}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:postorderiterator Class Reference}{23}{section.150}
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{23}{subsection.152}
+\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{23}{subsection.154}
+\contentsline {subsubsection}{\numberline {4.11.2.1}postorderiterator}{23}{subsubsection.155}
+\contentsline {subsubsection}{\numberline {4.11.2.2}postorderiterator}{23}{subsubsection.156}
+\contentsline {subsection}{\numberline {4.11.3}Member Function Documentation}{23}{subsection.157}
+\contentsline {subsubsection}{\numberline {4.11.3.1}operator"!=}{23}{subsubsection.158}
+\contentsline {subsubsection}{\numberline {4.11.3.2}operator$\ast $}{23}{subsubsection.159}
+\contentsline {subsubsection}{\numberline {4.11.3.3}operator++}{23}{subsubsection.160}
+\contentsline {subsubsection}{\numberline {4.11.3.4}operator==}{23}{subsubsection.161}
+\contentsline {section}{\numberline {4.12}tree$<$ T $>$\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:preorderiterator Class Reference}{23}{section.162}
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{24}{subsection.164}
+\contentsline {subsection}{\numberline {4.12.2}Constructor \& Destructor Documentation}{24}{subsection.166}
+\contentsline {subsubsection}{\numberline {4.12.2.1}preorderiterator}{24}{subsubsection.167}
+\contentsline {subsubsection}{\numberline {4.12.2.2}preorderiterator}{24}{subsubsection.168}
+\contentsline {subsection}{\numberline {4.12.3}Member Function Documentation}{24}{subsection.169}
+\contentsline {subsubsection}{\numberline {4.12.3.1}operator"!=}{24}{subsubsection.170}
+\contentsline {subsubsection}{\numberline {4.12.3.2}operator$\ast $}{24}{subsubsection.171}
+\contentsline {subsubsection}{\numberline {4.12.3.3}operator++}{24}{subsubsection.172}
+\contentsline {subsubsection}{\numberline {4.12.3.4}operator++}{24}{subsubsection.173}
+\contentsline {subsubsection}{\numberline {4.12.3.5}operator==}{24}{subsubsection.174}
+\contentsline {section}{\numberline {4.13}tree$<$ T $>$ Class Template Reference}{24}{section.175}
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{26}{subsection.179}
+\contentsline {subsection}{\numberline {4.13.2}Member Typedef Documentation}{26}{subsection.181}
+\contentsline {subsubsection}{\numberline {4.13.2.1}size\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}type}{26}{subsubsection.182}
+\contentsline {subsection}{\numberline {4.13.3}Constructor \& Destructor Documentation}{26}{subsection.183}
+\contentsline {subsubsection}{\numberline {4.13.3.1}tree}{26}{subsubsection.184}
+\contentsline {subsubsection}{\numberline {4.13.3.2}tree}{27}{subsubsection.185}
+\contentsline {subsubsection}{\numberline {4.13.3.3}tree}{28}{subsubsection.186}
+\contentsline {subsubsection}{\numberline {4.13.3.4}$\sim $tree}{28}{subsubsection.187}
+\contentsline {subsection}{\numberline {4.13.4}Member Function Documentation}{28}{subsection.188}
+\contentsline {subsubsection}{\numberline {4.13.4.1}assign\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}subtree}{28}{subsubsection.189}
+\contentsline {subsubsection}{\numberline {4.13.4.2}begin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Inorder}{28}{subsubsection.190}
+\contentsline {subsubsection}{\numberline {4.13.4.3}begin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Inorder}{28}{subsubsection.191}
+\contentsline {subsubsection}{\numberline {4.13.4.4}beginlevel}{28}{subsubsection.192}
+\contentsline {subsubsection}{\numberline {4.13.4.5}beginlevel}{28}{subsubsection.193}
+\contentsline {subsubsection}{\numberline {4.13.4.6}begin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Postorder}{28}{subsubsection.194}
+\contentsline {subsubsection}{\numberline {4.13.4.7}begin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Postorder}{28}{subsubsection.195}
+\contentsline {subsubsection}{\numberline {4.13.4.8}begin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Preorder}{28}{subsubsection.196}
+\contentsline {subsubsection}{\numberline {4.13.4.9}begin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Preorder}{28}{subsubsection.197}
+\contentsline {subsubsection}{\numberline {4.13.4.10}clear}{28}{subsubsection.198}
+\contentsline {subsubsection}{\numberline {4.13.4.11}empty}{29}{subsubsection.199}
+\contentsline {subsubsection}{\numberline {4.13.4.12}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Inorder}{29}{subsubsection.200}
+\contentsline {subsubsection}{\numberline {4.13.4.13}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Inorder}{29}{subsubsection.201}
+\contentsline {subsubsection}{\numberline {4.13.4.14}endlevel}{29}{subsubsection.202}
+\contentsline {subsubsection}{\numberline {4.13.4.15}endlevel}{29}{subsubsection.203}
+\contentsline {subsubsection}{\numberline {4.13.4.16}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Postorder}{29}{subsubsection.204}
+\contentsline {subsubsection}{\numberline {4.13.4.17}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Postorder}{29}{subsubsection.205}
+\contentsline {subsubsection}{\numberline {4.13.4.18}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Preorder}{29}{subsubsection.206}
+\contentsline {subsubsection}{\numberline {4.13.4.19}end\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Preorder}{29}{subsubsection.207}
+\contentsline {subsubsection}{\numberline {4.13.4.20}insert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}left}{29}{subsubsection.208}
+\contentsline {subsubsection}{\numberline {4.13.4.21}insert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}left}{29}{subsubsection.209}
+\contentsline {subsubsection}{\numberline {4.13.4.22}insert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}right\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sibling}{29}{subsubsection.210}
+\contentsline {subsubsection}{\numberline {4.13.4.23}insert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}right\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sibling}{30}{subsubsection.211}
+\contentsline {subsubsection}{\numberline {4.13.4.24}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}external}{30}{subsubsection.212}
+\contentsline {subsubsection}{\numberline {4.13.4.25}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}internal}{30}{subsubsection.213}
+\contentsline {subsubsection}{\numberline {4.13.4.26}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}root}{30}{subsubsection.214}
+\contentsline {subsubsection}{\numberline {4.13.4.27}null}{31}{subsubsection.215}
+\contentsline {subsubsection}{\numberline {4.13.4.28}operator"!=}{31}{subsubsection.216}
+\contentsline {subsubsection}{\numberline {4.13.4.29}operator=}{31}{subsubsection.217}
+\contentsline {subsubsection}{\numberline {4.13.4.30}operator==}{31}{subsubsection.218}
+\contentsline {subsubsection}{\numberline {4.13.4.31}prune\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}left}{31}{subsubsection.219}
+\contentsline {subsubsection}{\numberline {4.13.4.32}prune\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}right\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}sibling}{31}{subsubsection.220}
+\contentsline {subsubsection}{\numberline {4.13.4.33}root}{32}{subsubsection.221}
+\contentsline {subsubsection}{\numberline {4.13.4.34}setroot}{32}{subsubsection.222}
+\contentsline {subsubsection}{\numberline {4.13.4.35}size}{32}{subsubsection.223}
+\contentsline {chapter}{\numberline {5}File Documentation}{33}{chapter.224}
+\contentsline {section}{\numberline {5.1}generador\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Codigos.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{33}{section.225}
+\contentsline {subsection}{\numberline {5.1.1}Function Documentation}{33}{subsection.227}
+\contentsline {subsubsection}{\numberline {5.1.1.1}main}{33}{subsubsection.228}
+\contentsline {section}{\numberline {5.2}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{33}{section.229}
+\contentsline {section}{\numberline {5.3}gs1\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Set.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{33}{section.230}
+\contentsline {section}{\numberline {5.4}nodetree.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hxx File Reference}{34}{section.232}
+\contentsline {section}{\numberline {5.5}prueba\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}gs1.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp File Reference}{34}{section.233}
+\contentsline {subsection}{\numberline {5.5.1}Function Documentation}{34}{subsection.235}
+\contentsline {subsubsection}{\numberline {5.5.1.1}load}{34}{subsubsection.236}
+\contentsline {subsubsection}{\numberline {5.5.1.2}main}{34}{subsubsection.237}
+\contentsline {section}{\numberline {5.6}tree.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{34}{section.238}
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{35}{subsection.240}
+\contentsline {section}{\numberline {5.7}tree.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hxx File Reference}{35}{section.241}

@@ -1,0 +1,275 @@
+\section{diccionario Class Reference}
+\label{classdiccionario}\index{diccionario@{diccionario}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef pair$<$ nombre\+M, {\bf def\+M} $>$ {\bfseries entrada}\label{classdiccionario_a6d02be0cdf21aeb28bdf44203a2c0e4e}
+
+\item 
+typedef unsigned int {\bfseries size\+\_\+type}\label{classdiccionario_aa5ebee53d922cfd46db90f11cac6da35}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf diccionario} ()
+\begin{DoxyCompactList}\small\item\em constructor primitivo. \end{DoxyCompactList}\item 
+{\bf diccionario} (const {\bf diccionario} \&d)
+\begin{DoxyCompactList}\small\item\em constructor de copia \end{DoxyCompactList}\item 
+pair$<$ entrada, bool $>$ {\bf find} (const nombre\+M \&s) const 
+\begin{DoxyCompactList}\small\item\em busca una meteorito en el diccionario \end{DoxyCompactList}\item 
+bool {\bf insert} (const entrada \&e)
+\begin{DoxyCompactList}\small\item\em Inserta una entrada en el diccionario. \end{DoxyCompactList}\item 
+{\bf def\+M} \& {\bf operator[$\,$]} (const nombre\+M \&s)
+\begin{DoxyCompactList}\small\item\em Consulta/\+Inserta una entrada en el diccionario. \end{DoxyCompactList}\item 
+const {\bf def\+M} \& {\bf operator[$\,$]} (const nombre\+M \&s) const 
+\begin{DoxyCompactList}\small\item\em Consulta una entrada en el diccionario. \end{DoxyCompactList}\item 
+{\bf diccionario} \& {\bf operator=} (const {\bf diccionario} \&org)
+\begin{DoxyCompactList}\small\item\em operador de asignación \end{DoxyCompactList}\item 
+size\+\_\+type {\bf size} () const 
+\begin{DoxyCompactList}\small\item\em numero de entradas en el diccionario \end{DoxyCompactList}\item 
+bool {\bf empty} () const 
+\begin{DoxyCompactList}\small\item\em vacia Chequea si el diccionario esta vacio (\doxyref{size()}{p.}{classdiccionario_a441fdeeb87c717757f5f7ff50612d57e}==0) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& {\bfseries operator$<$$<$} (ostream \&, const {\bf diccionario} \&)\label{classdiccionario_a516e0071b7e529b4d37892ffb12247ef}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{diccionario@{diccionario}!diccionario@{diccionario}}
+\index{diccionario@{diccionario}!diccionario@{diccionario}}
+\subsubsection[{diccionario}]{\setlength{\rightskip}{0pt plus 5cm}diccionario\+::diccionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classdiccionario_a60c722b06ff7e050bae71601f74d7549}
+
+
+constructor primitivo. 
+
+Método constructor por defecto Se crea un diccionario vacío.
+
+\begin{DoxyPostcond}{Postcondition}
+define la entrada nula como el par (\char`\"{}\char`\"{},-\/1)
+
+Se modifica el diccionario 
+\end{DoxyPostcond}
+\index{diccionario@{diccionario}!diccionario@{diccionario}}
+\index{diccionario@{diccionario}!diccionario@{diccionario}}
+\subsubsection[{diccionario}]{\setlength{\rightskip}{0pt plus 5cm}diccionario\+::diccionario (
+\begin{DoxyParamCaption}
+\item[{const {\bf diccionario} \&}]{d}
+\end{DoxyParamCaption}
+)}\label{classdiccionario_a19558e1ad869a8791741b1359c87d80b}
+
+
+constructor de copia 
+
+Método constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em d} & diccionario a copiar\\
+\hline
+\end{DoxyParams}
+Crea una copia del diccionario que nos facilitan sin ordenar 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em diccionario} & \& d referencia a un diccionario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+No se modifica el diccionario
+\end{DoxyPostcond}
+Crea una copia del diccionario que nos facilitan ordenándolo de menor a mayor mediante el método de ordenación por burbuja. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em diccionario} & \& d referencia a un diccionario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se modifica el diccionario 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\index{diccionario@{diccionario}!empty@{empty}}
+\index{empty@{empty}!diccionario@{diccionario}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool diccionario\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classdiccionario_a8df27c218ef713041e09c9f799a1e9e6}
+
+
+vacia Chequea si el diccionario esta vacio (\doxyref{size()}{p.}{classdiccionario_a441fdeeb87c717757f5f7ff50612d57e}==0) 
+
+\index{diccionario@{diccionario}!find@{find}}
+\index{find@{find}!diccionario@{diccionario}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ diccionario\+::entrada, bool $>$ diccionario\+::find (
+\begin{DoxyParamCaption}
+\item[{const nombre\+M \&}]{s}
+\end{DoxyParamCaption}
+) const}\label{classdiccionario_a6afd06e122706d84fceb4428119ac059}
+
+
+busca una meteorito en el diccionario 
+
+Método buscar Busca un meteorito en el diccionario.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & cadena a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una copia de la entrada en el diccionario. Si no se encuentra devuelve la entrada con la definicion por defecto 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+no modifica el diccionario. \begin{DoxyVerb}Uso
+   
+
+if (D.find("aaa").second ==true) cout << "Esta" ;
+else cout << "No esta";
+\end{DoxyVerb}
+
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em const} & nombre\+M \& s referencia a una cadena constante a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una copia de la entrada en el diccionario en caso de encontrarla. En caso de no encontrarla, devuelve la entrada con la definición por defecto. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+no modifica el diccionario 
+\end{DoxyPostcond}
+\index{diccionario@{diccionario}!insert@{insert}}
+\index{insert@{insert}!diccionario@{diccionario}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}bool diccionario\+::insert (
+\begin{DoxyParamCaption}
+\item[{const entrada \&}]{e}
+\end{DoxyParamCaption}
+)}\label{classdiccionario_abda03cfdf5848a07b2d93ebdc1238d27}
+
+
+Inserta una entrada en el diccionario. 
+
+Inserta una entrada en el diccionario Para insertar una entrada en nuestro diccionario de meteoritos primero llama a la función buscar para que, en caso de que ya se encuentre un meteorito con la misma clave, no lo inserte sino que lo descarte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & entrada a insertar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la entrada se ha podido insertar con éxito, esto es, no existe un meteorito con igual nombre en el diccionario. False en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+Si e no esta en el diccionario, el \doxyref{size()}{p.}{classdiccionario_a441fdeeb87c717757f5f7ff50612d57e} sera incrementado en 1. 
+\end{DoxyPostcond}
+\index{diccionario@{diccionario}!operator=@{operator=}}
+\index{operator=@{operator=}!diccionario@{diccionario}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf diccionario} \& diccionario\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf diccionario} \&}]{org}
+\end{DoxyParamCaption}
+)}\label{classdiccionario_af34ed220d3e0faa56cbe713b97766f02}
+
+
+operador de asignación 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em org} & diccionario a copiar. Crea un diccionario duplicado exacto de org. \\
+\hline
+\end{DoxyParams}
+\index{diccionario@{diccionario}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!diccionario@{diccionario}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf def\+M} \& diccionario\+::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{const nombre\+M \&}]{s}
+\end{DoxyParamCaption}
+)}\label{classdiccionario_a8b2ac04f691e925d86967bbd62670a4d}
+
+
+Consulta/\+Inserta una entrada en el diccionario. 
+
+Busca la cadena s en el diccionario, si la encuentra devuelve una referencia a la definición de la misma en caso contrario la inserta, con una definición por defecto, devolviendo una referencia a este valor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & cadena a insertar \\
+\hline
+\mbox{\tt out}  & {\em \doxyref{def\+M}{p.}{classdef_m}} & \& referencia a la definicion asociada a la entrada, nos permite modificar la definición \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Si s no esta en el diccionario, el \doxyref{size()}{p.}{classdiccionario_a441fdeeb87c717757f5f7ff50612d57e} sera incrementado en 1.
+\end{DoxyPostcond}
+Busca la cadena s en el diccionario, si la encuentra devuelve una referencia a la definición de la misma. En caso contrario, la inserta, con una definición por defecto, devolviendo la referencia a este valor. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em const} & nombre\+M \& s referencia a una cadena constante a consultar \\
+\hline
+\mbox{\tt out}  & {\em \doxyref{def\+M}{p.}{classdef_m}} & \& referencia a la definición asociada a la entrada, nos permite modificar la definición. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+si s no está en el diccionario el \doxyref{size()}{p.}{classdiccionario_a441fdeeb87c717757f5f7ff50612d57e} se incrementa en 1. 
+\end{DoxyPostcond}
+\index{diccionario@{diccionario}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!diccionario@{diccionario}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf def\+M} \& diccionario\+::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{const nombre\+M \&}]{s}
+\end{DoxyParamCaption}
+) const}\label{classdiccionario_a1dbf7b521d4ac17e0bcd5d3e5ecff93d}
+
+
+Consulta una entrada en el diccionario. 
+
+Busca la cadena s en el diccionario, si la encuentra devuelve una referencia constante aa la definición de la misma, si no la encuentra da un mensaje de error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & cadena a insertar \\
+\hline
+\mbox{\tt out}  & {\em int} & \& referencia constante a la definicion asociada a la entrada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+No se modifica el diccionario.
+\end{DoxyPostcond}
+Busca la cadena s en el diccionario, si la encuentra devuelve una referencia constante a la definición de la misma. En caso contrario, lanza un mensaje de error. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em const} & nombre\+M \& s referencia a una cadena constante a consultar \\
+\hline
+\mbox{\tt out}  & {\em int} & \& referencia constante a la definición asociada a la entrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+no se modifica el diccionario 
+\end{DoxyPostcond}
+\index{diccionario@{diccionario}!size@{size}}
+\index{size@{size}!diccionario@{diccionario}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}diccionario\+::size\+\_\+type diccionario\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classdiccionario_a441fdeeb87c717757f5f7ff50612d57e}
+
+
+numero de entradas en el diccionario 
+
+\begin{DoxyPostcond}{Postcondition}
+No se modifica el diccionario. 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+diccionario.\+h\item 
+diccionario\+V1.\+hxx\item 
+diccionario\+V2.\+hxx\end{DoxyCompactItemize}

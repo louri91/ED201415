@@ -1,0 +1,146 @@
+ls ./*! \mainpage  PRACTICA TEMPLATE
+ *
+\version v0
+\author  Juan F. Huete
+
+\tableofcontents
+
+ * \section intro_sec Introducción
+ *
+ * En la práctica anterior se os pidió la implementación del tipo diccionario y un tipo meteorito. En esta práctica el objetivo es doble, por un lado permitir al alumno ver los errores cometidos en la práctica anterior y por otro lado seguir  avanzando  en el uso de las estructuras de datos, particularmente utilizando plantillas (templates) para la definición de tipos de datos genéricos, en este caso el diccionario. 
+
+
+La documentación se entrega mediante un fichero pdf, así como mediante un fichero zip que contiene todos los fuentes junto a los archivos necesarios para generar la documentación (en latex y html). Para generar los ficheros html con la documentación de la misma es suficiente con ejecutar desde la línea de comandos
+
+\code
+doxygen dox_diccionario
+\endcode
+
+Como resultado nos genera TRES directorios, uno con la documentación en html,  otro con la documentación en latex y el último con la documentación en rtf que puede ser editado con office. Para generar la documentación en pdf podemos exportar el rtf a pdf desde el office o bien  ejecutar los comandos de latex como sigue:
+
+\code 
+cd latex
+make
+\endcode
+
+Al hacer make se ejecuta una llamada al programa latex (si lo tenemos instalado) que como salida nos genera el fichero refman.pdf 
+
+
+Pasamos a detallar cada una de las partes de la práctica.
+
+\section parte1 CORRECCION DE LA PRACTICA 2.
+
+En decsai podeis encontrar los códigos fuentes de las dos versiones del tipo diccionario, junto con los fuentes de la clase meteorito, junto con el fichero principal.cpp que se ha diseñado para testear la validez de los métodos. Como antes, la compilación con una u otra versión se hace definiendo la constante DICC_V1 o DICC_V2 a la hora de compilar, esto es, 
+\code
+g++ -o ejecV1 -D DICC_V1 -std=c++0x fichero.cpp
+g++ -o ejecV2 -D DICC_V2 -std=c++0x fichero.cpp
+\endcode
+
+donde
+ -o es el nombre del fichero ejecutable
+ -D es la constante que nos indica la version con la que queremos compilar
+ -std = c++0x nos indica que queremos utilizar c++ V11.
+
+
+Los ficheros fuentes que se entregan  
+\li diccionario.h Especificación del TDA diccionario.
+\li diccionarioV1.hxx  primera versión del diccionario.
+\li diccionarioV2.hxx  segunda versión del diccionario.
+\li meteorito.h especificacion de la clase meteorio 
+\li meteorito.hxx implementación de la clase meteorito
+\li principal.cpp fichero de prueba del diccionario
+
+
+
+
+\subsection trabajo1 SE PIDE
+
+El alumno debe comparar su implementación con los distintos métodos entregados, hacer una crítica de los mismos, enviándome sus opiniones en un fichero pdf. En este caso, no es suficiente con indicar el hecho de que la implementaciones sean diferentes, sino en caso de serlo indicar cuáles han sido las dificultades encontradas a la hora de realizar la práctica. 
+
+Dicha crítica se debe entregar el Jueves 6 de Noviembre, a las 23:59 horas.
+
+\section Parte2 USO DE PLANTILLAS (TEMPLATES)
+
+La segunda parte de la práctica está destinada al manejo de templates por parte del alumno. En concreto se pide dotar al diccionario la capacidad de poder definir un diccionario utilizando cualquier tipo de valores. Así, podriamos tener
+
+\code
+#includde "diccionario.h"
+...
+// declaracion de tipos básicos:
+diccionario<string,int> D1;
+diccionario<int, string> D2;
+diccionario<string,string> D3;
+diccionario<float,string> D4;
+
+// declaracion de tipos más complejos:
+
+diccionario<nombreM,defM> meteoritos;
+diccionario<string,list<nombreM> > tipos;
+
+// declaracion de las entradas
+
+diccionario<string,int>::entrada esimple1;
+diccionario<nombreM,defM>::entrada emeteorito;
+diccionario<string,list<nombreM> >::entrada etipos;
+
+
+... 
+
+D1["Hola"]=3;
+D3["Hola"]="tres";
+D4[3.2]="tres con dos";
+
+...
+if (D1.find("Hola").second ==false) ....
+\endcode
+
+
+En este caso, para realizar  la práctica, el alumno deberá modificar tanto el fichero de especificación, diccionario.h, de forma que la propia especificación indique que trabaja con parámetros plantilla, como los ficheros de implementación (.hxx) de la clase diccionario. 
+
+
+De igual forma se debe modificar el fichero principal.cpp de manera que se demuestre el correcto comportamiento del diccionario cuando se instancia con distintos tipos. En concreto, se trabajara con otras dos instancias adicionales de diccionario:
+
+\li \code diccionario<string,list<nombreM> > tipos; \endcode que modela el diccionario que tiene como campo clave un string representando un código de meteorito y como definición tendremos la lista de todos los meteoritos  que se clasifican bajo dicho tipo.
+
+\li \code diccionario<string,int> met_anio; \endcode que teniendo como clave un string que representa el año de caida, nos permitirá computar el número de meteoritos que han caido en dicho año. 
+
+Además del correcto funcionamiento de todos los métodos de la práctica anterior, se pide implementar los siguientes métodos en el fichero principal:
+
+\verbatim
+
+/** @brief organiza el conjunto de meteoritos por tipologia
+@param[in] nombre_fichero que contiene el conjunto de meteoritos
+@param[out] tipos un diccionario donde para cada tipo de meteorito se almacena la lista de todos los nombres de meteoritos que pertenecen al mismo.
+
+Recordemos que el diccionario tiene clave unica, por tanto no puede haber elementos con  clave repetida. 
+Por este motivo, y dado que la tipologia del meteorito se repite por las distintas entradas del fichero, 
+se tendrá para cada una de las mismas una lista con los nombres de meteoritos.
+*/
+
+void listaTipos( const string  & nombre_fichero, diccionario<string,list<nombreM> > & tipos);
+
+
+
+/** @brief Obtiene el diccionario teniendo en cuenta el año de caida del meteorito
+@param[in] nombre_fichero que contiene el conjunto de meteoritos
+@param[out] met_anio número de meteoritos clasificados por año de caida.
+@return el año con más caidas.
+*/ 
+
+string caidos_por_anio(const string  & nombre_fichero, diccionario<string,int> & met_anio);
+\endverbatim
+
+Como diccionario tiene sobrecargado el operator<<, para visualizar un diccionario cualquiera nos basta con sobrecargar el operator<< para cada una de los tipos claves y definición con que se instancie. En concreto, para nuestro caso, bastaría con sobrecargar el operator<< para el tipo list<nombreM> pues los otros ya están préviamente definidos.
+
+\subsection SP2 SE PIDE
+
+El alumno debe entregar los siguientes ficheros, con las correciones necesarias para poder trabajar con parámetros plantilla:
+
+\li diccionario.h Especificación del TDA diccionario genérica.
+\li diccionarioV1.hxx  primera versión del diccionario genérico.
+\li diccionarioV2.hxx  segunda versión del diccionario genérico.
+\li principalTemplate.cpp fichero de prueba del diccionario
+
+Dicha entrega se debe realizar antes del Martes 11 de Noviembre, a las 23:59 horas.
+
+*/

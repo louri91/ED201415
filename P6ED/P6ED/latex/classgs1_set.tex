@@ -1,0 +1,313 @@
+\section{gs1\+Set Class Reference}
+\label{classgs1_set}\index{gs1\+Set@{gs1\+Set}}
+
+
+{\ttfamily \#include $<$gs1\+Set.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int {\bf size\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf gs1\+Set} ()
+\begin{DoxyCompactList}\small\item\em Constructor primitivo crea un \doxyref{gs1\+Set}{p.}{classgs1_set} con el caracter '-\/' en el nodo raiz. \end{DoxyCompactList}\item 
+{\bf gs1\+Set} (const {\bf gs1\+Set} \&x)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+void {\bf reading\+\_\+gs1\+Set} ()
+\begin{DoxyCompactList}\small\item\em Lectura de un \doxyref{gs1\+Set}{p.}{classgs1_set} por teclado. Se genera el \doxyref{gs1\+Set}{p.}{classgs1_set} utilizando un recorrido por nivel. \end{DoxyCompactList}\item 
+{\bf gs1\+Set} \& {\bf operator=} (const {\bf gs1\+Set} \&org)
+\begin{DoxyCompactList}\small\item\em operador de asignacion \end{DoxyCompactList}\item 
+bool {\bf insert} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Inserta una nuevo codigo dentro del \doxyref{gs1\+Set}{p.}{classgs1_set}. \end{DoxyCompactList}\item 
+bool {\bf erase} (const string \&s)
+\begin{DoxyCompactList}\small\item\em elimina el codigo de un \doxyref{gs1\+Set}{p.}{classgs1_set} \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} {\bf find} (const string \&s)
+\begin{DoxyCompactList}\small\item\em busca un codigo \end{DoxyCompactList}\item 
+list$<$ string $>$ {\bf codes\+With\+Prefix} (const string \&pr)
+\begin{DoxyCompactList}\small\item\em obtiene todos los codigos que tienen la misma secuencia prefijo \end{DoxyCompactList}\item 
+{\bf size\+\_\+type} {\bf size} () const 
+\begin{DoxyCompactList}\small\item\em tamanioo \end{DoxyCompactList}\item 
+bool {\bf empty} () const 
+\begin{DoxyCompactList}\small\item\em Chequea si el \doxyref{gs1\+Set}{p.}{classgs1_set} esta vacio (\doxyref{size()}{p.}{classgs1_set_aca665a0a03bd3c103a55384de9555816}==0) \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} {\bf begin} () const 
+\begin{DoxyCompactList}\small\item\em iterador a la primera palabra del conjunto. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} {\bf end} () const 
+\begin{DoxyCompactList}\small\item\em iterador al fin del conjunto \end{DoxyCompactList}\item 
+void {\bf print} () const 
+\begin{DoxyCompactList}\small\item\em imprime todos los codigos almacenados \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{gs1\+Set}{p.}{classgs1_set} \+:\doxyref{gs1\+Set}{p.}{classgs1_set} , operator=, size, empty, insert, erase, find,
+
+Descripcion
+
+(las tildes han sido omitidas deliberadamente, debido a fallos en la generacion de documentacion con doxygen)
+
+Un objeto de la clase \doxyref{gs1\+Set}{p.}{classgs1_set} representara un contenedor que permite almacenar un codigo electronico de producto, en concreto consideraremos la normativa gs1-\/128
+
+El gs1-\/128 es un sistema estandar de identificacion mediante codigo de barras utilizado internacionalmente para la identificacion de mercancias en entornos logisticos y no detallistas. Este sistema se utiliza principalmente para la identificacion de unidades de expedicion.
+
+En esta practica consideraremos codigos correctos, aquellos obtenidos segun la siguiente definicion\+: Una codigo correcto solo puede contener digitos (del 0 al 9) junto con parentesis de apertura y cierre. Por tanto, no debe tener espacios ni delimitadores del tipo comillas, llaves, comas, puntos, etc.
+
+El codigo gs1-\/128 vendra se representara mediante un string, ejemplos de codigos validos son\+: (01)18456789012342 (02)18456789012359(37)1234(00)384567890123456782
+
+En la practica N\+O nos preocuparemos de generar codigos correctos, sino que consideraremos como correcto cualquier codigo que tenga
+
+En el codigo podemos distinguir dos partes, encerrados entre parentesis los identificadores de aplicacion, I\+A, que son unos prefijos numericos creados para dar significado inequivoco a los elementos de datos estandarizados que se encuentran situados a continuacion (son subcodigos dentro el codigo gs1). Cada prefijo identifica el significado y el formato de los subcadigos que le siguen.
+
+En la actualidad, existen mas de 100 identificadores de aplicacion estandarizados internacionalmente. Por ejemplo,
+
+
+\begin{DoxyItemize}
+\item 00 Codigo Seriado de la Unidad de Envio (S\+S\+C\+C)
+\item 01 Codigo de agrupacion
+\item 02 Codigo del articulo / agrupacion contenido
+\item 37 Cantidades (va junto al I\+A 02)
+\item 10 Numero de lote
+\item 11 Fecha de fabricacion
+\item 13 Fecha de envasado
+\item 15 Fecha de consumo preferente
+\item 17 Fecha de caducidad etc.
+\end{DoxyItemize}
+
+En la practica N\+O nos preocuparemos de generar codigos correctos, sino que consideraremos como correcto cualquier codigo que tenga el formato (yy)xxxxz(yyy)xxxxxxxz(yy)xxxxxz, donde yyy e xxxxxz son digitos del 0 al 9 representando el I\+A y el codigo asociado. (El alumno interesado puede consultar como se construyen los codigos enel enlace {\tt http\+://www.\+aecoc.\+es/\+B\+A\+J\+A\+R/.\+php?id\+\_\+doc=1178\&id=\+G\+S1\%20128.\+pdf\&folder=documento\+\_\+socio}
+
+Veamos un ejemplo simple, podemos considerar los siguientes codigos
+
+(02)8423(10)0980(11)141215 (02)8423(10)0981(11)141215 (02)8324(10)0982(13)141010 (03)842442(10)211(73)0120(11)12334
+
+El objetivo de la practica es construir un contenedor de codigos gs1, donde el objetivo principal es permitir el acceso lo mas rapido posible a un determinado codigo, asumiendo que cada uno de los codigos que han sido obtenidos (por ejemplo, leidos de un codigo de barras del productos) es correcto.
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]Tareas a realizar\+: El alumno debera implementar la clase \doxyref{gs1\+Set}{p.}{classgs1_set} , junto con el codigo de prueba de los distintos metodos.\end{DoxyRefDesc}
+
+
+\subsection{Member Typedef Documentation}
+\index{gs1\+Set@{gs1\+Set}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf gs1\+Set\+::size\+\_\+type}}\label{classgs1_set_aa2f523650622dcceec0673947e8a8b98}
+Hace referencia al tipo asociado al numero de elementos en el codigo. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gs1\+Set@{gs1\+Set}!gs1\+Set@{gs1\+Set}}
+\index{gs1\+Set@{gs1\+Set}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{gs1\+Set}]{\setlength{\rightskip}{0pt plus 5cm}gs1\+Set\+::gs1\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_a0cd35790de6c6380914e7b7c1d75dbf9}
+
+
+Constructor primitivo crea un \doxyref{gs1\+Set}{p.}{classgs1_set} con el caracter '-\/' en el nodo raiz. 
+
+\index{gs1\+Set@{gs1\+Set}!gs1\+Set@{gs1\+Set}}
+\index{gs1\+Set@{gs1\+Set}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{gs1\+Set}]{\setlength{\rightskip}{0pt plus 5cm}gs1\+Set\+::gs1\+Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf gs1\+Set} \&}]{x}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_a89011f815981dff8a54da890fab6dffa}
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & \doxyref{gs1\+Set}{p.}{classgs1_set} que se copia \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{gs1\+Set@{gs1\+Set}!begin@{begin}}
+\index{begin@{begin}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::const\+\_\+iterator} gs1\+Set\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classgs1_set_afd8ce28bc276175bbe903af8b4e0509f}
+
+
+iterador a la primera palabra del conjunto. 
+
+Este iterador debe apuntar al nodo en el que se encuentra el ultimo caracter de la primera palabra en el conjunto. \index{gs1\+Set@{gs1\+Set}!codes\+With\+Prefix@{codes\+With\+Prefix}}
+\index{codes\+With\+Prefix@{codes\+With\+Prefix}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{codes\+With\+Prefix}]{\setlength{\rightskip}{0pt plus 5cm}list$<$string$>$ gs1\+Set\+::codes\+With\+Prefix (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{pr}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_ac442a0f53fe7a255bc86c8441a27092a}
+
+
+obtiene todos los codigos que tienen la misma secuencia prefijo 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pr} & prefijo a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una lista con todos los codigos epc que contienen el mismo prefijo 
+\end{DoxyReturn}
+\index{gs1\+Set@{gs1\+Set}!empty@{empty}}
+\index{empty@{empty}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool gs1\+Set\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classgs1_set_adf9a8c24552bb6f1194b9932d500aaad}
+
+
+Chequea si el \doxyref{gs1\+Set}{p.}{classgs1_set} esta vacio (\doxyref{size()}{p.}{classgs1_set_aca665a0a03bd3c103a55384de9555816}==0) 
+
+\index{gs1\+Set@{gs1\+Set}!end@{end}}
+\index{end@{end}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::const\+\_\+iterator} gs1\+Set\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classgs1_set_a5d95c7e026c05a1fce16a5cd1825e08f}
+
+
+iterador al fin del conjunto 
+
+\index{gs1\+Set@{gs1\+Set}!erase@{erase}}
+\index{erase@{erase}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}bool gs1\+Set\+::erase (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_ac5d33ca9e4e0b838a075dbddce5b1ffe}
+
+
+elimina el codigo de un \doxyref{gs1\+Set}{p.}{classgs1_set} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & elemento a borrar. Este elemento puede identificar a un prefijo, por ejemplo el codigo asociado a un producto, por lo que todos los codigos que contienen dicho prefijo seran eliminados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el numero de codigos que se han borrado, cero si el borrado no se ha podido realizar con exito 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+el \doxyref{size()}{p.}{classgs1_set_aca665a0a03bd3c103a55384de9555816} sera decrementado. 
+\end{DoxyPostcond}
+\index{gs1\+Set@{gs1\+Set}!find@{find}}
+\index{find@{find}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::const\+\_\+iterator} gs1\+Set\+::find (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_abec5761026311ddd64de0ca87271edfb}
+
+
+busca un codigo 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & nombre del codigo (o prefijo) a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un iterador que apunta al codigo o \doxyref{end()}{p.}{classgs1_set_a5d95c7e026c05a1fce16a5cd1825e08f} si el codigo (prefijo) no existe.
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & nombre del codigo a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un iterador que apunta al codigo o \doxyref{end()}{p.}{classgs1_set_a5d95c7e026c05a1fce16a5cd1825e08f} si el codigo no existe. 
+\end{DoxyReturn}
+\index{gs1\+Set@{gs1\+Set}!insert@{insert}}
+\index{insert@{insert}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}bool gs1\+Set\+::insert (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_a19b9920539fd8178056fa8a69914a70b}
+
+
+Inserta una nuevo codigo dentro del \doxyref{gs1\+Set}{p.}{classgs1_set}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & elemento a insertar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true si la insercion se ha podido realizar con exito, esto es, el codigo no pertenecia al \doxyref{gs1\+Set}{p.}{classgs1_set} 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+el \doxyref{size()}{p.}{classgs1_set_aca665a0a03bd3c103a55384de9555816} sera incrementado 
+\end{DoxyPostcond}
+\index{gs1\+Set@{gs1\+Set}!operator=@{operator=}}
+\index{operator=@{operator=}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set}\& gs1\+Set\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf gs1\+Set} \&}]{org}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_ad44756e1b81130ef88a6ccaaddc329ec}
+
+
+operador de asignacion 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em org} & \doxyref{gs1\+Set}{p.}{classgs1_set} a copiar. Crea un \doxyref{gs1\+Set}{p.}{classgs1_set} duplicado exacto a org. \\
+\hline
+\end{DoxyParams}
+\index{gs1\+Set@{gs1\+Set}!print@{print}}
+\index{print@{print}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void gs1\+Set\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classgs1_set_af57a0fa34dcd1f01b8356583760ee46a}
+
+
+imprime todos los codigos almacenados 
+
+\index{gs1\+Set@{gs1\+Set}!reading\+\_\+gs1\+Set@{reading\+\_\+gs1\+Set}}
+\index{reading\+\_\+gs1\+Set@{reading\+\_\+gs1\+Set}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{reading\+\_\+gs1\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void gs1\+Set\+::reading\+\_\+gs1\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_a93f792f04522755886a1d3f16751b179}
+
+
+Lectura de un \doxyref{gs1\+Set}{p.}{classgs1_set} por teclado. Se genera el \doxyref{gs1\+Set}{p.}{classgs1_set} utilizando un recorrido por nivel. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[{\bf Todo}]implementar este metodo correctamente O\+J\+O E\+S\+T\+E M\+E\+T\+O\+D\+O O\+S S\+I\+R\+V\+E P\+A\+R\+A P\+O\+D\+E\+R C\+O\+N\+S\+T\+R\+U\+I\+R U\+N A\+R\+B\+O\+L N\+O T\+I\+E\+N\+E E\+N C\+U\+E\+N\+T\+A E\+L I\+N\+V\+A\+R\+I\+A\+N\+T\+E D\+E L\+A R\+E\+P\+R\+E\+S\+E\+N\+T\+A\+C\+I\+O\+N A\+L N\+O C\+O\+N\+S\+I\+D\+E\+R\+A\+R E\+L C\+A\+M\+P\+O I\+N\+T D\+E\+L N\+O\+D\+O!!!!! D\+E\+B\+E\+I\+S M\+O\+D\+I\+F\+I\+C\+A\+R\+L\+O P\+A\+R\+A Q\+U\+E L\+O H\+A\+G\+A D\+E F\+O\+R\+M\+A C\+O\+R\+R\+E\+C\+T\+A \end{DoxyRefDesc}
+\index{gs1\+Set@{gs1\+Set}!size@{size}}
+\index{size@{size}!gs1\+Set@{gs1\+Set}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::size\+\_\+type} gs1\+Set\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classgs1_set_aca665a0a03bd3c103a55384de9555816}
+
+
+tamanioo 
+
+\begin{DoxyReturn}{Returns}
+delvuelve el numero de palabras del \doxyref{gs1\+Set}{p.}{classgs1_set} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+{\bf gs1\+Set.\+h}\item 
+{\bf gs1\+Set.\+cpp}\end{DoxyCompactItemize}

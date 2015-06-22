@@ -1,0 +1,2 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}An\IeC {\'a}lisis de la eficiencia de los algoritmos implementados en la pr\IeC {\'a}ctica}{3}

@@ -1,0 +1,67 @@
+\input{preambuloSimple.tex}
+
+%----------------------------------------------------------------------------------------
+%	TÃTULO Y DATOS DEL ALUMNO
+%----------------------------------------------------------------------------------------
+
+\title{	
+\normalfont \normalsize 
+\textsc{{\bf Estructuras de Datos (2014-2015)} \\ Grado en Ingeniería Informática \\ Universidad de Granada} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Memoria Práctica 3 Parte 1\\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\usepackage[spanish]{babel}
+\author{Amanda Fernández Piedra} % Nombre y apellidos
+\usepackage[utf8]{inputenc}
+\date{\normalsize\today} % Incluye la fecha actual
+
+%----------------------------------------------------------------------------------------
+% DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Muestra el TÃ­tulo
+
+\newpage %inserta un salto de pÃ¡gina
+
+%\tableofcontents % para generar el Ã­ndice de contenidos
+
+%\listoffigures
+
+%\listoftables
+
+\newpage
+
+\newpage
+
+\section{DiccionarioV1.hxx}
+
+\begin{itemize}
+
+\item \textbf{Diferencias:} En la primera versión del diccionario de meteoritos la única diferencia a destacar es que tanto los métodos insertar como los dos operator[] que realizan consultas al diccionario deben implementar una función de buscar. En la solución que se nos da se implementa la función buscar una vez por cada método, incluso habiendo un método buscar. En mi solución, sólamente he implementado un método buscar y los métodos insertar y operator[] llaman a este método buscar cada vez que lo requieran, de forma que ahorro varias líneas de código.
+\item \textbf{Dificultades:} En esta versión no he encontrado ninguna dificultad. Cabe destacar que es la versión más ineficiente y también la más fácil de implementar.
+
+\end{itemize}
+
+\section{DiccionarioV2.hxx}
+
+\begin{itemize}
+
+  \item \textbf{Diferencias:} En la segunda versión sí hay más diferencias. La implementación correcta (según la solución proporcionada) es 
+  hacer una inserción ordenada de los meteoritos haciendo uso de el método de 
+  búsqueda binaria, lo cual es evidentemente mucho más eficiente que la primera 
+  versión del problema. En mi caso, la inserción la he realizado de la misma 
+  forma en las dos versiones, pero ésta versión después de insertar, ordena el 
+  diccionario con el método de ordenación por burbuja y aunque se gana en 
+  eficiencia en el método de búsqueda, se pierde tiempo ordenando el vector 
+  pudiendo hacer una inserción ordenada tal y como se proporciona en la 
+  solución.
+  \item \textbf{Dificultades:} En realidad no he encontrado dificultades, creo 
+  que el error que cometí al realizar la práctica fue que no entendí muy bien lo 
+  que se pedía en la segunda implementación, mi solución no es tan eficiente.
+
+\end{itemize}
+
+\end{document}

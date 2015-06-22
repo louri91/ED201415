@@ -1,0 +1,146 @@
+\section{gs1\+Set\+:\+:const\+\_\+iterator Class Reference}
+\label{classgs1_set_1_1const__iterator}\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+
+
+{\ttfamily \#include $<$gs1\+Set.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf const\+\_\+iterator} ()
+\begin{DoxyCompactList}\small\item\em Constructor primitivo. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} (const {\bf const\+\_\+iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+string {\bf operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em devuelve el codigo completo al que apunta el iterador. Nota\+: Se encuentra en el camino que hay desde el nodo hacia la raiz. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} \& {\bf operator++} ()
+\begin{DoxyCompactList}\small\item\em avanza hacia el siguiente final de (sub)codigo en preorden en el \doxyref{gs1\+Set}{p.}{classgs1_set} . Nota\+: Avanza por el arbol hasta el siguiente nodo que es final de (sub)codigo. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} {\bf operator++} (int)
+\begin{DoxyCompactList}\small\item\em avanza hacia el siguiente final de (sub)codigo en preorden en el \doxyref{gs1\+Set}{p.}{classgs1_set}. Nota\+: Avanza por el arbol hasta el siguiente nodo que es final de (sub)codigo. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} \& {\bf upper\+\_\+\+I\+A} ()
+\begin{DoxyCompactList}\small\item\em sube hacia el identificador de aplicacion (I\+A) anterior en el codigo. \end{DoxyCompactList}\item 
+{\bf const\+\_\+iterator} \& {\bf operator=} (const {\bf const\+\_\+iterator} \&it)
+\item 
+bool {\bf operator==} (const {\bf const\+\_\+iterator} \&it) const 
+\item 
+bool {\bf operator!=} (const {\bf const\+\_\+iterator} \&it) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf gs1\+Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{const\+\_\+iterator}{p.}{classgs1_set_1_1const__iterator}\+: \doxyref{const\+\_\+iterator}{p.}{classgs1_set_1_1const__iterator}, operator$\ast$, operator++
+
+Descripcion
+
+Un objeto de la clase \doxyref{gs1\+Set\+::const\+\_\+iterator}{p.}{classgs1_set_1_1const__iterator} representara un iterador sobre el conjunto de codigos en el \doxyref{gs1\+Set}{p.}{classgs1_set} .
+
+Nota\+: Solo itera sobre (subcodigos) y no sobre los elementos individuales 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}gs1\+Set\+::const\+\_\+iterator\+::const\+\_\+iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_1_1const__iterator_a06cf5acf08644f286f880c423ed5809c}
+
+
+Constructor primitivo. 
+
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}gs1\+Set\+::const\+\_\+iterator\+::const\+\_\+iterator (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\+\_\+iterator} \&}]{it}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_1_1const__iterator_a2fc66bc07775e2379153f070050ab454}
+
+
+Constructor de copia. 
+
+
+
+\subsection{Member Function Documentation}
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool gs1\+Set\+::const\+\_\+iterator\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\+\_\+iterator} \&}]{it}
+\end{DoxyParamCaption}
+) const}\label{classgs1_set_1_1const__iterator_a102214a07cd3e785ba62f4911df3e033}
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}string gs1\+Set\+::const\+\_\+iterator\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_1_1const__iterator_a65114ff8a8b956f89606c14c3b080933}
+
+
+devuelve el codigo completo al que apunta el iterador. Nota\+: Se encuentra en el camino que hay desde el nodo hacia la raiz. 
+
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::const\+\_\+iterator} \& gs1\+Set\+::const\+\_\+iterator\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_1_1const__iterator_a7a19d707a8b2ec4ac94b6eb23e3cfd51}
+
+
+avanza hacia el siguiente final de (sub)codigo en preorden en el \doxyref{gs1\+Set}{p.}{classgs1_set} . Nota\+: Avanza por el arbol hasta el siguiente nodo que es final de (sub)codigo. 
+
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::const\+\_\+iterator} gs1\+Set\+::const\+\_\+iterator\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_1_1const__iterator_a5f2fcf952ce9b8f2f035a55034ef7c79}
+
+
+avanza hacia el siguiente final de (sub)codigo en preorden en el \doxyref{gs1\+Set}{p.}{classgs1_set}. Nota\+: Avanza por el arbol hasta el siguiente nodo que es final de (sub)codigo. 
+
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::const\+\_\+iterator} \& gs1\+Set\+::const\+\_\+iterator\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\+\_\+iterator} \&}]{it}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_1_1const__iterator_adda16b2322765cef5f1e6557cbb6f771}
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool gs1\+Set\+::const\+\_\+iterator\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\+\_\+iterator} \&}]{it}
+\end{DoxyParamCaption}
+) const}\label{classgs1_set_1_1const__iterator_a9296872744cb8ca5bcc3e939db2ae79d}
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!upper\+\_\+\+I\+A@{upper\+\_\+\+I\+A}}
+\index{upper\+\_\+\+I\+A@{upper\+\_\+\+I\+A}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{upper\+\_\+\+I\+A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gs1\+Set\+::const\+\_\+iterator} \& gs1\+Set\+::const\+\_\+iterator\+::upper\+\_\+\+I\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgs1_set_1_1const__iterator_a33f3caa21c689fc097ebaaa644578b6f}
+
+
+sube hacia el identificador de aplicacion (I\+A) anterior en el codigo. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}!gs1\+Set@{gs1\+Set}}
+\index{gs1\+Set@{gs1\+Set}!gs1\+Set\+::const\+\_\+iterator@{gs1\+Set\+::const\+\_\+iterator}}
+\subsubsection[{gs1\+Set}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf gs1\+Set}\hspace{0.3cm}{\ttfamily [friend]}}\label{classgs1_set_1_1const__iterator_af717cc40ee95044b0c5f60a8cc51df98}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+{\bf gs1\+Set.\+h}\item 
+{\bf gs1\+Set.\+cpp}\end{DoxyCompactItemize}

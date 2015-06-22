@@ -1,0 +1,647 @@
+\section{tree$<$ T $>$ Class Template Reference}
+\label{classtree}\index{tree$<$ T $>$@{tree$<$ T $>$}}
+
+
+{\ttfamily \#include $<$tree.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf const\+\_\+inorderiterator}
+\item 
+class {\bf const\+\_\+leveliterator}
+\item 
+class {\bf const\+\_\+node}
+\item 
+class {\bf const\+\_\+postorderiterator}
+\item 
+class {\bf const\+\_\+preorderiterator}
+\item 
+class {\bf inorderiterator}
+\item 
+class {\bf leveliterator}
+\item 
+class {\bf node}
+\item 
+class {\bf postorderiterator}
+\item 
+class {\bf preorderiterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int {\bf size\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf tree} ()
+\begin{DoxyCompactList}\small\item\em Constructor primitivo por defecto. \end{DoxyCompactList}\item 
+{\bf tree} (const T \&e)
+\begin{DoxyCompactList}\small\item\em Constructor primitivo. \end{DoxyCompactList}\item 
+{\bf tree} (const {\bf tree}$<$ T $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+void {\bf assign\+\_\+subtree} (const {\bf tree}$<$ T $>$ \&a, {\bf node} n)
+\begin{DoxyCompactList}\small\item\em Reemplaza el receptor por una copia de subárbol. \end{DoxyCompactList}\item 
+{\bf $\sim$tree} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bf node} {\bf setroot} (const T \&v)
+\begin{DoxyCompactList}\small\item\em Asigna la raiz al arbol vacío. \end{DoxyCompactList}\item 
+{\bf tree}$<$ T $>$ \& {\bf operator=} (const {\bf tree}$<$ T $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+{\bf node} {\bf root} () const 
+\begin{DoxyCompactList}\small\item\em Obtener el nodo raíz. \end{DoxyCompactList}\item 
+void {\bf prune\+\_\+left} ({\bf node} n, {\bf tree}$<$ T $>$ \&dest)
+\begin{DoxyCompactList}\small\item\em Podar el subárbol hijo a la izquierda de un nodo. \end{DoxyCompactList}\item 
+void {\bf prune\+\_\+right\+\_\+sibling} ({\bf node} n, {\bf tree}$<$ T $>$ \&dest)
+\begin{DoxyCompactList}\small\item\em Podar el subárbol hermano a la derecha de un nodo. \end{DoxyCompactList}\item 
+{\bf node} {\bf insert\+\_\+left} ({\bf node} n, const T \&e)
+\begin{DoxyCompactList}\small\item\em Insertar un nodo como hijo a la izquierda de un nodo. \end{DoxyCompactList}\item 
+{\bf node} {\bf insert\+\_\+left} ({\bf node} n, {\bf tree}$<$ T $>$ \&rama)
+\begin{DoxyCompactList}\small\item\em Insertar un árbol como subárbol hijo a la izquierda de un nodo. \end{DoxyCompactList}\item 
+{\bf node} {\bf insert\+\_\+right\+\_\+sibling} ({\bf node} n, const T \&e)
+\begin{DoxyCompactList}\small\item\em Insertar un nodo como hermano a la derecha de un nodo. \end{DoxyCompactList}\item 
+{\bf node} {\bf insert\+\_\+right\+\_\+sibling} ({\bf node} n, {\bf tree}$<$ T $>$ \&rama)
+\begin{DoxyCompactList}\small\item\em Insertar un árbol como subárbol hermano a la derecha de un nodo. \end{DoxyCompactList}\item 
+void {\bf clear} ()
+\begin{DoxyCompactList}\small\item\em Hace nulo un árbol. \end{DoxyCompactList}\item 
+{\bf size\+\_\+type} {\bf size} () const 
+\begin{DoxyCompactList}\small\item\em Obtiene el nmero de nodos. \end{DoxyCompactList}\item 
+bool {\bf empty} () const 
+\begin{DoxyCompactList}\small\item\em Comprueba si un árbol esta vacío. \end{DoxyCompactList}\item 
+bool {\bf null} () const 
+\begin{DoxyCompactList}\small\item\em Comprueba si un árbol es nulo. \end{DoxyCompactList}\item 
+bool {\bf is\+\_\+root} ({\bf node} n) const 
+\begin{DoxyCompactList}\small\item\em Comprueba si un nodo es la raíz. \end{DoxyCompactList}\item 
+bool {\bf is\+\_\+internal} ({\bf node} v) const 
+\begin{DoxyCompactList}\small\item\em Comprueba si un nodo es interior. \end{DoxyCompactList}\item 
+bool {\bf is\+\_\+external} ({\bf node} v) const 
+\begin{DoxyCompactList}\small\item\em Comprueba si un nodo es exterior. \end{DoxyCompactList}\item 
+bool {\bf operator==} (const {\bf tree}$<$ T $>$ \&a) const 
+\begin{DoxyCompactList}\small\item\em Operador de comparación de igualdad. \end{DoxyCompactList}\item 
+bool {\bf operator!=} (const {\bf tree}$<$ T $>$ \&a) const 
+\begin{DoxyCompactList}\small\item\em Operador de comparación de desigualdad. \end{DoxyCompactList}\item 
+{\bf preorderiterator} {\bf begin\+Preorder} ()
+\item 
+{\bf preorderiterator} {\bf end\+Preorder} ()
+\item 
+{\bf const\+\_\+preorderiterator} {\bf begin\+Preorder} () const 
+\item 
+{\bf const\+\_\+preorderiterator} {\bf end\+Preorder} () const 
+\item 
+{\bf inorderiterator} {\bf begin\+Inorder} ()
+\item 
+{\bf inorderiterator} {\bf end\+Inorder} ()
+\item 
+{\bf const\+\_\+inorderiterator} {\bf begin\+Inorder} () const 
+\item 
+{\bf const\+\_\+inorderiterator} {\bf end\+Inorder} () const 
+\item 
+{\bf postorderiterator} {\bf begin\+Postorder} ()
+\item 
+{\bf postorderiterator} {\bf end\+Postorder} ()
+\item 
+{\bf const\+\_\+postorderiterator} {\bf begin\+Postorder} () const 
+\item 
+{\bf const\+\_\+postorderiterator} {\bf end\+Postorder} () const 
+\item 
+{\bf leveliterator} {\bf beginlevel} ()
+\item 
+{\bf leveliterator} {\bf endlevel} ()
+\item 
+{\bf const\+\_\+leveliterator} {\bf beginlevel} () const 
+\item 
+{\bf const\+\_\+leveliterator} {\bf endlevel} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class tree$<$ T $>$}
+
+\doxyref{tree\+::tree}{p.}{classtree_ae79eee474e984b533cfaf3b0f29868ef}, assign\+\_\+subtree, setroot, root, $\sim$tree, =, prune\+\_\+left, prune\+\_\+right\+\_\+sibling,insert\+\_\+left, insert\+\_\+right\+\_\+sibling, clear, size, empty, ==, !=, is\+\_\+root, internal, external
+
+Representa un árbol general con nodos etiquetados con datos del tipo T.
+
+T debe tener definidas las operaciones\+:
+
+
+\begin{DoxyItemize}
+\item T \& operator=(const T \& e);
+\item bool operator!=(const T \& e);
+\item bool operator==(const T \& e);
+\end{DoxyItemize}
+
+Son mutables. Residen en memoria dinámica. 
+
+\subsection{Member Typedef Documentation}
+\index{tree@{tree}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!tree@{tree}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tree}$<$ T $>$\+::{\bf size\+\_\+type}}\label{classtree_a1a84b8fa38881c77f187c472881f1876}
+Hace referencia al tipo asociado la tamaño del tree 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tree@{tree}!tree@{tree}}
+\index{tree@{tree}!tree@{tree}}
+\subsubsection[{tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_ae79eee474e984b533cfaf3b0f29868ef}
+
+
+Constructor primitivo por defecto. 
+
+Crea un árbol nulo. \index{tree@{tree}!tree@{tree}}
+\index{tree@{tree}!tree@{tree}}
+\subsubsection[{tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tree}$<$ T $>$\+::{\bf tree} (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{e}
+\end{DoxyParamCaption}
+)}\label{classtree_a24cafcc1062cd99be8ae5ad395644aba}
+
+
+Constructor primitivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Etiqueta para la raíz.\\
+\hline
+\end{DoxyParams}
+Crea un árbol con un único nodo etiquetado con e. \index{tree@{tree}!tree@{tree}}
+\index{tree@{tree}!tree@{tree}}
+\subsubsection[{tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tree}$<$ T $>$\+::{\bf tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf tree}$<$ T $>$ \&}]{a}
+\end{DoxyParamCaption}
+)}\label{classtree_a3a1b5515063305b3b4ecd0ebb3c22af6}
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & a árbol que se copia.\\
+\hline
+\end{DoxyParams}
+Crea un árbol duplicado exacto de a. \index{tree@{tree}!````~tree@{$\sim$tree}}
+\index{````~tree@{$\sim$tree}!tree@{tree}}
+\subsubsection[{$\sim$tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::$\sim${\bf tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a14e55536cde00c544de0ee8af244d1d0}
+
+
+Destructor. 
+
+Destruye el receptor liberando los recursos que ocupaba. 
+
+\subsection{Member Function Documentation}
+\index{tree@{tree}!assign\+\_\+subtree@{assign\+\_\+subtree}}
+\index{assign\+\_\+subtree@{assign\+\_\+subtree}!tree@{tree}}
+\subsubsection[{assign\+\_\+subtree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf tree}$<$ T $>$\+::assign\+\_\+subtree (
+\begin{DoxyParamCaption}
+\item[{const {\bf tree}$<$ T $>$ \&}]{a, }
+\item[{{\bf node}}]{n}
+\end{DoxyParamCaption}
+)}\label{classtree_a2c17cd972ed8310cd4cf7a377a28bbd0}
+
+
+Reemplaza el receptor por una copia de subárbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & árbol desde el que se copia. \\
+\hline
+{\em n} & nodo raíz del subárbol que se copia.\\
+\hline
+\end{DoxyParams}
+El receptor se hace nulo y después se le asigna una copia del subárbol de a cuya raíz es n. \index{tree@{tree}!begin\+Inorder@{begin\+Inorder}}
+\index{begin\+Inorder@{begin\+Inorder}!tree@{tree}}
+\subsubsection[{begin\+Inorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf inorderiterator} {\bf tree}$<$ T $>$\+::begin\+Inorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a90ef47894d2c1108f804514a03677b2e}
+\index{tree@{tree}!begin\+Inorder@{begin\+Inorder}}
+\index{begin\+Inorder@{begin\+Inorder}!tree@{tree}}
+\subsubsection[{begin\+Inorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+inorderiterator} {\bf tree}$<$ T $>$\+::begin\+Inorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a53fb2ae36d61c79da2a1d117f9ba4bb7}
+\index{tree@{tree}!beginlevel@{beginlevel}}
+\index{beginlevel@{beginlevel}!tree@{tree}}
+\subsubsection[{beginlevel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf leveliterator} {\bf tree}$<$ T $>$\+::beginlevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_af54f841b2db89a2c856a996c3b5387ef}
+\index{tree@{tree}!beginlevel@{beginlevel}}
+\index{beginlevel@{beginlevel}!tree@{tree}}
+\subsubsection[{beginlevel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+leveliterator} {\bf tree}$<$ T $>$\+::beginlevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a9fe51855db6143e390694d1b77009fb6}
+\index{tree@{tree}!begin\+Postorder@{begin\+Postorder}}
+\index{begin\+Postorder@{begin\+Postorder}!tree@{tree}}
+\subsubsection[{begin\+Postorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf postorderiterator} {\bf tree}$<$ T $>$\+::begin\+Postorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a0c16abeb486aa8730a035d576c059a75}
+\index{tree@{tree}!begin\+Postorder@{begin\+Postorder}}
+\index{begin\+Postorder@{begin\+Postorder}!tree@{tree}}
+\subsubsection[{begin\+Postorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+postorderiterator} {\bf tree}$<$ T $>$\+::begin\+Postorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a49e7b6bd27341646e1b0d012ef65c140}
+\index{tree@{tree}!begin\+Preorder@{begin\+Preorder}}
+\index{begin\+Preorder@{begin\+Preorder}!tree@{tree}}
+\subsubsection[{begin\+Preorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf preorderiterator} {\bf tree}$<$ T $>$\+::begin\+Preorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_ab0392f2c2907631b436d1b3a8eefa7bb}
+\index{tree@{tree}!begin\+Preorder@{begin\+Preorder}}
+\index{begin\+Preorder@{begin\+Preorder}!tree@{tree}}
+\subsubsection[{begin\+Preorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+preorderiterator} {\bf tree}$<$ T $>$\+::begin\+Preorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a6c3476928c618d3e2326638b60d2e0f9}
+\index{tree@{tree}!clear@{clear}}
+\index{clear@{clear}!tree@{tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf tree}$<$ T $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtree_ad42b7e30545f02316f5d22c375ff1323}
+
+
+Hace nulo un árbol. 
+
+Destruye todos los nodos del árbol receptor y lo hace un árbol nulo. \index{tree@{tree}!empty@{empty}}
+\index{empty@{empty}!tree@{tree}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf tree}$<$ T $>$\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a9d2bf7177edccc35f4bb6a1caad24bc8}
+
+
+Comprueba si un árbol esta vacío. 
+
+\begin{DoxyReturn}{Returns}
+true, si el receptor es un árbol vacío. false, en otro caso. 
+\end{DoxyReturn}
+\index{tree@{tree}!end\+Inorder@{end\+Inorder}}
+\index{end\+Inorder@{end\+Inorder}!tree@{tree}}
+\subsubsection[{end\+Inorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf inorderiterator} {\bf tree}$<$ T $>$\+::end\+Inorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a4cd5cf7bbdc5fdb5bb2cb267744f70d4}
+\index{tree@{tree}!end\+Inorder@{end\+Inorder}}
+\index{end\+Inorder@{end\+Inorder}!tree@{tree}}
+\subsubsection[{end\+Inorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+inorderiterator} {\bf tree}$<$ T $>$\+::end\+Inorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a1ca159ca6669262877adf5d22e3f13ed}
+\index{tree@{tree}!endlevel@{endlevel}}
+\index{endlevel@{endlevel}!tree@{tree}}
+\subsubsection[{endlevel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf leveliterator} {\bf tree}$<$ T $>$\+::endlevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a1dd728a52d0ee91c5a9086ae9067baa6}
+\index{tree@{tree}!endlevel@{endlevel}}
+\index{endlevel@{endlevel}!tree@{tree}}
+\subsubsection[{endlevel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+leveliterator} {\bf tree}$<$ T $>$\+::endlevel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_acfbcf33153efd583edec70e2b4276d3c}
+\index{tree@{tree}!end\+Postorder@{end\+Postorder}}
+\index{end\+Postorder@{end\+Postorder}!tree@{tree}}
+\subsubsection[{end\+Postorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf postorderiterator} {\bf tree}$<$ T $>$\+::end\+Postorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a1439424e2a1ba511d942fce22c080d55}
+\index{tree@{tree}!end\+Postorder@{end\+Postorder}}
+\index{end\+Postorder@{end\+Postorder}!tree@{tree}}
+\subsubsection[{end\+Postorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+postorderiterator} {\bf tree}$<$ T $>$\+::end\+Postorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a858d25454af42cb3e804850b2a3efde2}
+\index{tree@{tree}!end\+Preorder@{end\+Preorder}}
+\index{end\+Preorder@{end\+Preorder}!tree@{tree}}
+\subsubsection[{end\+Preorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf preorderiterator} {\bf tree}$<$ T $>$\+::end\+Preorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_ab059aa4fdfa959d0235ec21d8fd39ed4}
+\index{tree@{tree}!end\+Preorder@{end\+Preorder}}
+\index{end\+Preorder@{end\+Preorder}!tree@{tree}}
+\subsubsection[{end\+Preorder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf const\+\_\+preorderiterator} {\bf tree}$<$ T $>$\+::end\+Preorder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a95838fc61214f46efd4df33e00ba3f66}
+\index{tree@{tree}!insert\+\_\+left@{insert\+\_\+left}}
+\index{insert\+\_\+left@{insert\+\_\+left}!tree@{tree}}
+\subsubsection[{insert\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf node} {\bf tree}$<$ T $>$\+::insert\+\_\+left (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{n, }
+\item[{const T \&}]{e}
+\end{DoxyParamCaption}
+)}\label{classtree_a71c38aab8c196740173c2636bf282f3a}
+
+
+Insertar un nodo como hijo a la izquierda de un nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nodo del receptor. n != nodo\+\_\+nulo. \\
+\hline
+{\em e} & etiqueta del nuevo nodo.\\
+\hline
+\end{DoxyParams}
+Inserta un nuevo nodo con etiqueta e como hijo a la izquierda, el anterior hijo más a la izquierda queda como hermano a la derecha del recién insertado \index{tree@{tree}!insert\+\_\+left@{insert\+\_\+left}}
+\index{insert\+\_\+left@{insert\+\_\+left}!tree@{tree}}
+\subsubsection[{insert\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf node} {\bf tree}$<$ T $>$\+::insert\+\_\+left (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{n, }
+\item[{{\bf tree}$<$ T $>$ \&}]{rama}
+\end{DoxyParamCaption}
+)}\label{classtree_a1335c3ee49ea00462da90b5c0acd1f36}
+
+
+Insertar un árbol como subárbol hijo a la izquierda de un nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nodo del receptor. n != nodo\+\_\+nulo. \\
+\hline
+{\em rama} & subárbol que se inserta. Es M\+O\+D\+I\+F\+I\+C\+A\+D\+O.\\
+\hline
+\end{DoxyParams}
+Si rama no es un árbol vacío\+: Inserta rama como hijo a la izquierda de n, el anterior hijo más a la izquierda queda como hermana a la derecha del recién insertado. y rama se hace árbol nulo. En caso contrario no se hace nada \index{tree@{tree}!insert\+\_\+right\+\_\+sibling@{insert\+\_\+right\+\_\+sibling}}
+\index{insert\+\_\+right\+\_\+sibling@{insert\+\_\+right\+\_\+sibling}!tree@{tree}}
+\subsubsection[{insert\+\_\+right\+\_\+sibling}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf node} {\bf tree}$<$ T $>$\+::insert\+\_\+right\+\_\+sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{n, }
+\item[{const T \&}]{e}
+\end{DoxyParamCaption}
+)}\label{classtree_a87507064c22521056d787c75d4e54159}
+
+
+Insertar un nodo como hermano a la derecha de un nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nodo del receptor. !n.Nulo(). \\
+\hline
+{\em e} & etiqueta del nuevo nodo.\\
+\hline
+\end{DoxyParams}
+Inserta un nuevo nodo con etiqueta e como hermano a la derecha, el anterior hermano a la derecha de n queda como hermano a la derecha del nodo insertado \index{tree@{tree}!insert\+\_\+right\+\_\+sibling@{insert\+\_\+right\+\_\+sibling}}
+\index{insert\+\_\+right\+\_\+sibling@{insert\+\_\+right\+\_\+sibling}!tree@{tree}}
+\subsubsection[{insert\+\_\+right\+\_\+sibling}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf node} {\bf tree}$<$ T $>$\+::insert\+\_\+right\+\_\+sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{n, }
+\item[{{\bf tree}$<$ T $>$ \&}]{rama}
+\end{DoxyParamCaption}
+)}\label{classtree_ace8dfdb700f275c800c59001f3684563}
+
+
+Insertar un árbol como subárbol hermano a la derecha de un nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nodo del receptor. !n.Nulo(). \\
+\hline
+{\em rama} & subárbol que se inserta. Es M\+O\+D\+I\+F\+I\+C\+A\+D\+O.\\
+\hline
+\end{DoxyParams}
+Si rama no es un árbol vacío\+: Asigna el valor de rama como nuevo subárbol hermano a la derecha, el anteriot hermano a la derecha de n queda como hermano a la derecha del nodo insertado y rama se hace árbol nulo. En caso contrario no se hace nada \index{tree@{tree}!is\+\_\+external@{is\+\_\+external}}
+\index{is\+\_\+external@{is\+\_\+external}!tree@{tree}}
+\subsubsection[{is\+\_\+external}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf tree}$<$ T $>$\+::is\+\_\+external (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_ab7cf795716b4fd36cfb71c83f3f7f802}
+
+
+Comprueba si un nodo es exterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & nodo que se evala.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, si n es exterior. false, en otro caso. 
+\end{DoxyReturn}
+\index{tree@{tree}!is\+\_\+internal@{is\+\_\+internal}}
+\index{is\+\_\+internal@{is\+\_\+internal}!tree@{tree}}
+\subsubsection[{is\+\_\+internal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf tree}$<$ T $>$\+::is\+\_\+internal (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_ac335c111b9c1ce0df3c4831abec2daff}
+
+
+Comprueba si un nodo es interior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & nodo que se evala.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, si n es interior. false, en otro caso. 
+\end{DoxyReturn}
+\index{tree@{tree}!is\+\_\+root@{is\+\_\+root}}
+\index{is\+\_\+root@{is\+\_\+root}!tree@{tree}}
+\subsubsection[{is\+\_\+root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf tree}$<$ T $>$\+::is\+\_\+root (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a5c1c294d722d9e7e5fa2f7229720588c}
+
+
+Comprueba si un nodo es la raíz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nodo que se evala.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, si n es la raíz del receptor. false, en otro caso. 
+\end{DoxyReturn}
+\index{tree@{tree}!null@{null}}
+\index{null@{null}!tree@{tree}}
+\subsubsection[{null}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf tree}$<$ T $>$\+::null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classtree_a7e0a45a359ec22dd8d8ef27575db55e1}
+
+
+Comprueba si un árbol es nulo. 
+
+\begin{DoxyReturn}{Returns}
+true, si el receptor es un árbol nulo. false, en otro caso. 
+\end{DoxyReturn}
+\index{tree@{tree}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tree@{tree}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf tree}$<$ T $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf tree}$<$ T $>$ \&}]{a}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_affe69b758414b69d60d76b403b053f48}
+
+
+Operador de comparación de desigualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & árbol con que se compara el receptor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, si el receptor no es igual, en estructura o etiquetas a a. false, en otro caso. 
+\end{DoxyReturn}
+\index{tree@{tree}!operator=@{operator=}}
+\index{operator=@{operator=}!tree@{tree}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tree}$<$ T $>$ \& {\bf tree}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf tree}$<$ T $>$ \&}]{a}
+\end{DoxyParamCaption}
+)}\label{classtree_a0d7e8d23f04fe40a42563c3433efca97}
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & árbol que se asigna.\\
+\hline
+\end{DoxyParams}
+Destruye el contenido previo del receptor y le asigna un duplicado de a. \index{tree@{tree}!operator==@{operator==}}
+\index{operator==@{operator==}!tree@{tree}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf tree}$<$ T $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf tree}$<$ T $>$ \&}]{a}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a91aef576418da3ef236cad98986a8b3c}
+
+
+Operador de comparación de igualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & árbol con que se compara el receptor.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, si el receptor es igual, en estructura y etiquetas a a. false, en otro caso. 
+\end{DoxyReturn}
+\index{tree@{tree}!prune\+\_\+left@{prune\+\_\+left}}
+\index{prune\+\_\+left@{prune\+\_\+left}!tree@{tree}}
+\subsubsection[{prune\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf tree}$<$ T $>$\+::prune\+\_\+left (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{n, }
+\item[{{\bf tree}$<$ T $>$ \&}]{dest}
+\end{DoxyParamCaption}
+)}\label{classtree_a60c20081e52473e80211753e3660d4f0}
+
+
+Podar el subárbol hijo a la izquierda de un nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nodo del receptor. n != nodo\+\_\+nulo. \\
+\hline
+{\em dest} & subárbol hijo a la izquierda de n. Es M\+O\+D\+I\+F\+I\+C\+A\+D\+O.\\
+\hline
+\end{DoxyParams}
+Desconecta el subárbol hijo a la izquierda de n, que pasa a ser el árbol que era su hermano a la derecha, si lo tuviera. El subárbol anterior se devuelve sobre dest. \index{tree@{tree}!prune\+\_\+right\+\_\+sibling@{prune\+\_\+right\+\_\+sibling}}
+\index{prune\+\_\+right\+\_\+sibling@{prune\+\_\+right\+\_\+sibling}!tree@{tree}}
+\subsubsection[{prune\+\_\+right\+\_\+sibling}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf tree}$<$ T $>$\+::prune\+\_\+right\+\_\+sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf node}}]{n, }
+\item[{{\bf tree}$<$ T $>$ \&}]{dest}
+\end{DoxyParamCaption}
+)}\label{classtree_aff47bb76a99058742781572a65db28aa}
+
+
+Podar el subárbol hermano a la derecha de un nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nodo del receptor. n != nodo\+\_\+nulo. \\
+\hline
+{\em dest} & subárbol hermano a la derecha de n. Es M\+O\+D\+I\+F\+I\+C\+A\+D\+O.\\
+\hline
+\end{DoxyParams}
+Desconecta el subárbol hermano a la derecha de n, que pasa a ser el árbol que era su hermano a la derecha, si lo tuviera. El subárbol anterior se devuelve sobre dest. \index{tree@{tree}!root@{root}}
+\index{root@{root}!tree@{tree}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf node} {\bf tree}$<$ T $>$\+::root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a6f4b4993040cc1f8316e31fddbca9e90}
+
+
+Obtener el nodo raíz. 
+
+\begin{DoxyReturn}{Returns}
+nodo raíz del receptor. 
+\end{DoxyReturn}
+\index{tree@{tree}!setroot@{setroot}}
+\index{setroot@{setroot}!tree@{tree}}
+\subsubsection[{setroot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tree}$<$ T $>$\+::{\bf node} {\bf tree}$<$ T $>$\+::setroot (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{v}
+\end{DoxyParamCaption}
+)}\label{classtree_af8feb34d84c77a6c3117c2f90f48f460}
+
+
+Asigna la raiz al arbol vacío. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & el valor a almacenar en la raiz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+el receptor es el árbol nulo. 
+\end{DoxyPrecond}
+\index{tree@{tree}!size@{size}}
+\index{size@{size}!tree@{tree}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf tree}$<$ T $>$\+::{\bf size\+\_\+type} {\bf tree}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtree_a1e171188b4da9d1dfcbaee92e31f9c40}
+
+
+Obtiene el nmero de nodos. 
+
+\begin{DoxyReturn}{Returns}
+nmero de nodos del receptor. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+{\bf tree.\+h}\item 
+{\bf tree.\+hxx}\end{DoxyCompactItemize}
